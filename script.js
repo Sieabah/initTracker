@@ -20,8 +20,8 @@ angular.module('tracker').directive('itracker',[
 
 				$scope.sort = function(){
 					$scope.players = $scope.players.sort(function(a,b){
-						if(a.init > b.init) return 1;
-						if(a.init < b.init) return -1;
+						if(a.init > b.init) return -1;
+						if(a.init < b.init) return 1;
 						return 0;
 					})
 				};
